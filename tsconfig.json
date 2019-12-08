@@ -17,7 +17,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-rating": [
+        "dist/angular-rating"
+      ],
+      "angular-rating/*": [
+        "dist/angular-rating/*"
+      ],
+      "angular-console-logger": [
+        "dist/angular-console-logger"
+      ],
+      "angular-console-logger/*": [
+        "dist/angular-console-logger/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -124,6 +124,76 @@
           }
         }
       }
+    },
+    "angular-rating": {
+      "projectType": "library",
+      "root": "projects/angular-rating",
+      "sourceRoot": "projects/angular-rating/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-rating/tsconfig.lib.json",
+            "project": "projects/angular-rating/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-rating/src/test.ts",
+            "tsConfig": "projects/angular-rating/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-rating/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-rating/tsconfig.lib.json",
+              "projects/angular-rating/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "angular-console-logger": {
+      "projectType": "library",
+      "root": "projects/angular-console-logger",
+      "sourceRoot": "projects/angular-console-logger/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-console-logger/tsconfig.lib.json",
+            "project": "projects/angular-console-logger/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-console-logger/src/test.ts",
+            "tsConfig": "projects/angular-console-logger/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-console-logger/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-console-logger/tsconfig.lib.json",
+              "projects/angular-console-logger/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "frontend"
 }
